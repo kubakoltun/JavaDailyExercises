@@ -1,4 +1,4 @@
-lass Kata {
+class Kata {
     static String greet(String name, String owner) {
         
       if (name.equals(owner)) {
