@@ -1,4 +1,4 @@
-public class Dinglemouse {
+public class animal_years {
 
   public static int[] humanYearsCatYearsDogYears(final int humanYears) {
     int dog = 0;
