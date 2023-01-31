@@ -1,4 +1,4 @@
-public class Kata{
+public class control_growth {
 
   public static int grow(int[] x){
     
