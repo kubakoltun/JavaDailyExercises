@@ -1,4 +1,4 @@
-public class Clock
+public class clock
 {
   public static int Past(int h, int m, int s) 
   {
