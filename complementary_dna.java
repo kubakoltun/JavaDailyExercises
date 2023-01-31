@@ -1,4 +1,4 @@
-public class DnaStrand {
+public class complementary_dna {
   public static String makeComplement(String dna) {
     char[] tab = dna.toCharArray();
     
