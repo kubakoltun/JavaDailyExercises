@@ -1,4 +1,4 @@
-class Kata {
+class counting_sheep {
   public static String countingSheep(int num) {
     
     String text = " sheep...";
