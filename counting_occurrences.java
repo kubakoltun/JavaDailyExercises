@@ -1,4 +1,4 @@
-public class Counter {
+public class counting_occurrences {
   public int countSheeps(Boolean[] arrayOfSheeps) {
        
     int counter = 0;
