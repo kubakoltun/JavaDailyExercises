@@ -1,4 +1,4 @@
-public class FindDivisor {
+public class find_divisor {
 
   public long numberOfDivisors(int n) {
     
