@@ -1,5 +1,5 @@
 import java.util.*;
-public class ZywOo {
+public class find_wolf {
 
   public static String warnTheSheep(String[] array) {
     Collections.reverse(Arrays.asList(array));
