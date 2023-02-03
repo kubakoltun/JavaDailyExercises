@@ -1,4 +1,4 @@
-class FirstNonConsecutive {
+class first_non_consecutive {
     static Integer find(final int[] array) { 
      Integer b = 0;
      
