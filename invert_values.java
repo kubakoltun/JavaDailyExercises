@@ -1,4 +1,4 @@
-public class Kata {
+public class invert_values {
   public static int[] invert(int[] array) {    
     
     for (int i = 0; i < array.length; i++) {
