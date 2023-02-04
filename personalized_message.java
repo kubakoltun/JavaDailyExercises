@@ -1,4 +1,4 @@
-class Kata {
+class personalized_message {
     static String greet(String name, String owner) {
         
       if (name.equals(owner)) {
