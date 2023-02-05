@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class SmashWords {
+public class sentence_smash {
 
 	public static String smash(String... words) {
     String concat = "";
