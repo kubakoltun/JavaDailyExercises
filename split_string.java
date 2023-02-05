@@ -1,4 +1,4 @@
-public class StringSplit {
+public class split_string {
     public static String[] solution(String s) {
 
         double w = s.length()/2.0;
