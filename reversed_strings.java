@@ -1,4 +1,4 @@
-public class Kata {
+public class reversed_strings {
 
   public static String solution(String str) {
     
