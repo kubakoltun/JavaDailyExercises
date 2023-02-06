@@ -1,4 +1,4 @@
-public class ZywOo {
+public class sum_of_differences {
   public static int sumOfDifferences(int[] arr) {
     
     int temp = 0;
