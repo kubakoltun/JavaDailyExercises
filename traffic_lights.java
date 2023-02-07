@@ -1,4 +1,4 @@
-public class TrafficLights {
+public class traffic_lights {
 
   public static String updateLight(String current) {
   
