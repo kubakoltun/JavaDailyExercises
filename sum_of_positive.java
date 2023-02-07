@@ -1,4 +1,4 @@
-public class Positive{
+public class sum_of_positive{
 
   public static int sum(int[] arr){
     
