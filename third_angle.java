@@ -1,4 +1,4 @@
-public class ThirdAngle {
+public class third_angle {
     public static int otherAngle(int angle1, int angle2) {
         
       
