@@ -1,4 +1,4 @@
-public class KeepHydrated  {
+public class water_usage  {
 
   public int Liters(double time)  {
     
