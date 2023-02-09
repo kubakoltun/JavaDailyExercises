@@ -23,9 +23,7 @@ public class yes_no {
         for (int i = 0; i < 2; i++) {
             dataArr[index] = i;
             yesNoCrt(dataArr, digits, index + 1);
-
         }
-
     }
 
     public static void main(String[] args) {
