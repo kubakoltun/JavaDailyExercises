@@ -1,4 +1,4 @@
-public class Kata {
+public class which_quarter {
     public static int quarterOf(int month) {
         
      
