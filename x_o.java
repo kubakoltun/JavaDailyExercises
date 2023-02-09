@@ -1,4 +1,4 @@
-public class XO {
+public class x_o {
   
   public static boolean getXO (String str) {
     
