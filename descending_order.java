@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class DescendingOrder {
+public class descending_order {
   public static int sortDesc(int num) {
     int length = 0;
     long temp = 1;
