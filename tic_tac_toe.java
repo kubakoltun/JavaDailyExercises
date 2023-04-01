@@ -1,8 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
 
-//shouldnt be in a separate repository 
-
 public class tic_tac_toe {
 
     private final static char[][] board =
