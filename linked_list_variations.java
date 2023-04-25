@@ -116,7 +116,107 @@ class MyList<T> {
 }
 
 
-public class linked_list_variations {
+class MyQueue<T> {
+    private ListNode<T> head;
+    private ListNode<T> tail;
+
+    public MyQueue() {
+        head = null;
+        tail = null;
+    }
+
+    public void add(T value) {
+        ListNode<T> newNode = new ListNode<>(value);
+        if (tail == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+    }
+
+    public T delete() {
+        if (head == null) {
+            throw new IndexOutOfBoundsException();
+        }
+        T value = head.value;
+        head = head.next;
+        if (head == null) {
+            tail = null;
+        }
+        return value;
+    }
+
+    public void show() {
+        ListNode<T> current = head;
+        while (current != null) {
+            System.out.print(current.value + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+
+    private static class ListNode<T> {
+        T value;
+        ListNode<T> next;
+
+        ListNode(T value) {
+            this.value = value;
+            this.next = null;
+        }
+    }
+}
+
+
+class MyStack<T> {
+    private ListNode<T> head;
+    private int size;
+
+    public MyStack() {
+        head = null;
+        size = 0;
+    }
+
+    public void add(T e) {
+        ListNode<T> newNode = new ListNode<>(e);
+        newNode.next = head;
+        head = newNode;
+        size++;
+    }
+
+    public T delete() {
+        if (size == 0) {
+            throw new RuntimeException("Stack is empty");
+        }
+        T deletedValue = head.value;
+        head = head.next;
+        size--;
+        return deletedValue;
+    }
+
+    public void show() {
+        ListNode<T> current = head;
+        while (current != null) {
+            System.out.print(current.value + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+
+    private static class ListNode<T> {
+        T value;
+        ListNode<T> next;
+
+        ListNode(T value) {
+            this.value = value;
+            this.next = null;
+        }
+    }
+}
+
+
+public class Main {
 
     public static void main(String[] args) {
         System.out.println("========MyList=========");
