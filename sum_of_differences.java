@@ -2,7 +2,6 @@ public class sum_of_differences {
   public static int sumOfDifferences(int[] arr) {
     
     int temp = 0;
-    
     int result = 0;
     
     for (int j = 0; j < arr.length; j++) {
@@ -13,21 +12,18 @@ public class sum_of_differences {
           arr[j] = arr[k];
           arr[k] = temp;
         }
-}
-    }
+       }
+     }
     
     
     for (int i = 0; i < arr.length - 1; i++) {
-      
       if (arr.length > 1) {
-                
             result = result + (arr[i] - arr[i + 1]);
-          
       } else {
         result = 0;
       }
-      
     }
+    
     return result;
   }
 }
