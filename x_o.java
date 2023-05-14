@@ -1,7 +1,5 @@
 public class x_o {
-  
   public static boolean getXO (String str) {
-    
     int x = 0;
     int o = 0;
     
@@ -13,6 +11,5 @@ public class x_o {
     }
     
     return x == o;
-    
   }
 }
