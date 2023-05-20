@@ -1,4 +1,4 @@
-public class frog_jumping {
+public class frog_jumps {
     public static int solution(int[] a) {      
       int jumps = 0;
       int val = 0;
@@ -13,16 +13,13 @@ public class frog_jumping {
           break;
         }
         i += val;
-        
         jumps++;
         if (jumps > 20) {
           jumps = -1;
           break;
         }
-        System.out.print(" i=" + i + " dlugosc=" + a.length + " ");
-      }
-      while(i < a.length || i < 0);
-      
+      } while(i < a.length || i < 0);
+        
       return jumps;
     }
 }
