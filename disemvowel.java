@@ -7,8 +7,7 @@ public class disemvowel {
              str.charAt(i) == 'A'|| str.charAt(i) == 'E' || str.charAt(i) == 'I' || str.charAt(i) == 'O' || 
              str.charAt(i) == 'U' ) {
             System.out.println("log");
-          }
-          else {
+          } else {
             nstr += str.charAt(i);
           }
         }
