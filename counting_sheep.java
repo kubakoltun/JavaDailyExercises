@@ -1,6 +1,5 @@
 class counting_sheep {
   public static String countingSheep(int num) {
-    
     String text = " sheep...";
     String result = "";
     
