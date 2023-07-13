@@ -1,5 +1,4 @@
 public class animal_years {
-
   public static int[] humanYearsCatYearsDogYears(final int humanYears) {
     int dog = 0;
     int cat = 0;
@@ -19,5 +18,4 @@ public class animal_years {
     
     return new int[]{humanYears,cat,dog};
   }
-
 }
