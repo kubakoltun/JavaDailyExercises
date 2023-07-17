@@ -1,5 +1,4 @@
 public class points_amount {
-  
     public static int points(String[] games) {
       int sum = 0;
       
