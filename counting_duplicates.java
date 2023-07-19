@@ -1,11 +1,11 @@
-public class counting_duplicates {
+public class CountingDuplicates {
   public static int duplicateCount(String text) {
     int duplicates = 0;
     char[] duplicatesTab = new char[text.length()];
     int g = 0;
     
     for (int i = 0; i < text.length(); i++) {
-      for (int j = 0; j < text.length(); j++) {
+      for (int j = i+1; j < text.length(); j++) {
         if (Character.toLowerCase(text.charAt(i)) == Character.toLowerCase(text.charAt(j))) {
           if (!contains(Character.toLowerCase(text.charAt(i)), duplicatesTab)) {
             duplicates++;
@@ -29,4 +29,3 @@ public class counting_duplicates {
     return false;
   }
 }
-
