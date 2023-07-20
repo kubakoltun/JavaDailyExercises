@@ -4,6 +4,7 @@ public class highest_lowest {
         int mn = 99999;
         int sp = 0;
         int num = 0;
+        
         for (int i = 0; i < numbers.length(); i++) {
           if (numbers.charAt(i) == ' ') {
             num = Integer.parseInt(numbers.substring(sp, i));
