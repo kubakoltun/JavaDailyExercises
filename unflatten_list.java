@@ -1,24 +1,30 @@
 import java.util.ArrayList;
+import java.util.List;
 
-public class unflatten_list {
-  public static Object[] unflatten(int[] flatArray) { 
-    ArrayList<Object> res = new ArrayList<>();
-    
-    
-    for (int i = 0; i < flatArray.length; i++) {
+public class Kata {
+    public static Object[] unflatten(int[] arr) {
       
-        if (flatArray[i] >= 3) {
-          int innerLoop = Math.min(flatArray[i], flatArray.length-i);
-          int[] tmp = new int[innerLoop];
-          for (int j = 0; j < innerLoop; j++) {
-            tmp[j] = flatArray[i + j];
-          }
-          res.add(tmp);
-        } else {
-          res.add(flatArray[i]);
-        }  
+        
+        List<Object> result = new ArrayList<>();
+        int i = 0;
+
+        while (i < arr.length) {
+            if (arr[i] < 3) {
+                result.add(arr[i]);
+                i++;
+            } else {
+                int subArraySize = arr[i];
+                Object[] subArray = new Object[subArraySize];
+
+                for (int j = 0; j < subArraySize && i + j + 1 < arr.length; j++) {
+                    subArray[j] = arr[i + j + 1];
+                }
+
+                result.add(subArray);
+                i += subArraySize + 1;
+            }
+        }
+
+        return result.toArray();
     }
-    
-    return res.toArray();
   }
-}
