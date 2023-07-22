@@ -9,18 +9,18 @@ public class Kata {
         while (i < arr.length) {
             int subArraySize = arr[i];
             if (subArraySize > 2) {
-                List<Integer> subArray = new ArrayList<>();
-                for (int j = 1; j <= subArraySize && i + j < arr.length; j++) {
+              List<Object> subArray = new ArrayList<>();
+                for (int j = 0; j < subArraySize && i + j < arr.length ; j++) {
                     subArray.add(arr[i + j]);
                 }
-                result.add(subArray);
-                i += subArraySize + 1;
+                result.add(subArray.toArray());
+                i += subArraySize;
             } else {
                 result.add(arr[i]);
                 i++;
             }
         }
-
+      
         return result.toArray();
     }
 }
