@@ -3,6 +3,7 @@ public class array_square_average {
     int length = arr1.length;
     int difSum = 0;
     double avgHold = 0;
+    
     for (int i = 0; i < length; i++) {
       difSum = 0;
       difSum = arr1[i] - arr2[i];
