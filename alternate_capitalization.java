@@ -3,6 +3,7 @@ class alternate_capitalization {
       String strE = "";
       String strO = "";
       String[] strR = new String[2];
+        
       for (int i = 0; i < s.length(); i++) {
         if (i % 2 == 0 && s.charAt(i) != ' ') {
           strE += Character.toUpperCase(s.charAt(i));
