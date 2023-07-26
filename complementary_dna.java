@@ -7,15 +7,15 @@ public class complementary_dna {
     }
     
     return new String(tab);
-    }
+  }
     
-    private static char getComplement(char c) {
-      switch (c){
-        case 'A' : return 'T';
-        case 'T' : return 'A';
-        case 'C' : return 'G';
-        case 'G' : return 'C';
-          }
-      return c;
+  private static char getComplement(char c) {
+     switch (c) {
+       case 'A' : return 'T';
+       case 'T' : return 'A';
+       case 'C' : return 'G';
+       case 'G' : return 'C';
+     }
+     return c;
   }
 }
