@@ -3,6 +3,7 @@ public class frog_jumps {
       int jumps = 0;
       int val = 0;
       int i = 0;
+        
       do {
         if (i < 0) {
           break;
