@@ -3,8 +3,7 @@ class personalized_message {
         
       if (name.equals(owner)) {
         return "Hello boss";
-      }
-      else {
+      } else {
         return "Hello guest";
       }
     }
