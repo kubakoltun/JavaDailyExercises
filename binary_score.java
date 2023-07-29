@@ -2,12 +2,13 @@ import java.math.BigInteger;
 
 public class binary_score {
   public static BigInteger score (BigInteger n) {
-    BigInteger sore = BigInteger.ZERO;
-    
-    for (BigInteger i = BigInteger.ZERO;  i.compareTo(n) <= 0; i = i.add(BigInteger.ONE)) {
-      sore = sore.or(i);
+    int highestBitSet = n.bitLength() - 1;
+    BigInteger score = BigInteger.ZERO;
+
+    for (int i = 0; i <= highestBitSet; i++) {
+      score = score.setBit(i);
     }
     
-	  return sore;
+    return score;
   }
 }
