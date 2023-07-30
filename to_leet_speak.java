@@ -30,11 +30,13 @@ class to_leet_speak {
       leetMap.put('X', 'X');
       leetMap.put('Y', 'Y');
       leetMap.put('Z', '2');
+        
       for (int i = 0; i < speak.length(); i++) {
         char currentChar = speak.charAt(i);
         char leetChar = leetMap.getOrDefault(currentChar, currentChar);
         res.append(leetChar);
       }
+        
       return res.toString();
     }
 }
