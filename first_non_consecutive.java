@@ -6,11 +6,11 @@ class first_non_consecutive {
         if (array[i] + 1 != array[i + 1]) {
           b = array[i + 1];
           break;
-          
         } else {
           b = null;
         }     
        }
+        
       return b;
     }
 }
