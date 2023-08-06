@@ -1,27 +1,30 @@
+import java.math.BigInteger;
+
 public class string_increment {
   public static String incrementString(String str) {
     String number = "";
     String restOfS = "";
-    int numCon = 0;
+    int numLength = 0;
     
     for (int i = 0; i < str.length(); i++) {
       if (Character.isDigit(str.charAt(i))) {
           number += str.charAt(i);
-       } 
+          numLength++;
+       } else {
+          number = "";
+          numLength = 0;
+      }
     }
     
-    if (number.equals("")) {
-      number = "1";
-      return str + number;
+    if (numLength == 0) {
+      return str + "1";
     }
-    numCon = Integer.parseInt(number);
-    numCon++;
-    String subS = str.substring(0, str.length() -  number.length()+1);
     
-    if (Character.isDigit(subS.charAt(subS.length() - 1))) {
-      return str.substring(0, str.length() -  String.valueOf(numCon).length()) + numCon;
-    } else {
-      return str.substring(0, str.length() -  String.valueOf(numCon).length()+1) + numCon;
-    }
+    BigInteger numCon = new BigInteger(number).add(BigInteger.ONE);
+
+    String formattedNumber = String.format("%0" + numLength + "d", numCon);
+    String result = str.substring(0, str.length() - numLength) + formattedNumber;
+
+    return result;
   }
 }
