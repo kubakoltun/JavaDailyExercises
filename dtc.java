@@ -1,18 +1,25 @@
 public class dtc {
   public static double toIndustrial(String time) {
-    double hour = time.valueOf(time.charAt(0));
-    double minuteF = time.valueOf(time.charAt(2));
-    double minuteS = time.valueOf(time.charAt(3));
+    String[] timeC = time.split(":");
+    int hour = Integer.parseInt(timeC[0]);
+    int minutes = Integer.parseInt(timeC[1]);
     
-    double result = hour+(minuteF*10+minuteS)/60.0;
-    return result;
+    return Math.round((hour + (minutes / 60.0)) * 100.0) / 100.0;
   }
   
   public static double toIndustrial(int time) {
-    return time/60.0;
+    return Math.round((time / 60.0) * 100.0) / 100.0;
   }
   
   public static String toNormal(double time) {
+    int hours = (int) time;
+    int minutes = (int) Math.round((time - hours) * 60); 
     
-    return ;
+    if (minutes >= 60) {
+        hours += minutes / 60;
+        minutes %= 60;
+    }
+    
+    return hours + ":" + String.format("%02d", minutes);
   }
+}
