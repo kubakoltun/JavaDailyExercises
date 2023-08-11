@@ -1,12 +1,13 @@
 public class filter_string {
     public static long filterString(final String value) {
-      String inBetween = "";
+      StringBuilder inBetween = new StringBuilder();
+        
       for (int i = 0; i < value.length(); i++) {
-        if (value.charAt(i) == "$%d") {
-          inBetween += value.charAt(i);
+        if (Character.isDigit(value.charAt(i))) {
+          inBetween.append(value.charAt(i));
         }
       }
-      
-      return Integer.parseInt(inBetween);
+        
+      return Long.parseLong(inBetween.toString());
     }
 }
