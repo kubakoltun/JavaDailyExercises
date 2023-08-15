@@ -1,21 +1,17 @@
-import java.util.Set;
 import java.util.HashSet;
-import java.util.Iterator;
 
-class not_unique {
+public class not_unique {
     public static int solve(int[] arr) {
-        Set<Integer> encountered = new HashSet<>();
-      
+        HashSet<Integer> set = new HashSet<>();
+        
         for (int num : arr) {
-            int absNum = Math.abs(num);
-            if (encountered.contains(absNum)) {
-                encountered.remove(absNum);
+            if (set.contains(-num)) {
+                set.remove(-num);
             } else {
-                encountered.add(num);
+                set.add(num);
             }
         }
-      
-        Iterator<Integer> iterator = encountered.iterator();
-        return iterator.next();
+        
+        return set.iterator().next();
     }
-}
+  }
