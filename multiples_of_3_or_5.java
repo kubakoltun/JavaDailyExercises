@@ -3,13 +3,7 @@ public class multiples_of_3_or_5 {
     int sum = 0;
     
     for (int i = 0; i < number; i++) {
-      if (i % 3 == 0 && i % 5 != 0) {
-        sum += i;
-      }
-      else if (i % 3 != 0 && i % 5 == 0) {
-        sum += i;
-      }
-      else if (i % 15 == 0) {
+      if (i % 3 == 0 || i % 5 == 0) {
         sum += i;
       }
     }
