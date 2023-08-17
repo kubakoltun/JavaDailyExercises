@@ -1,8 +1,27 @@
 public class diagonal_or_sum {
     public static void main(String[] args) {
-        System.out.println(metoda(new int[][]{{1, 1, 3}, {1, 1, 3}, {1, 1, 3}}));
-        System.out.println(metoda(new int[][]{{2, 2, 2}, {2, 2, 2}}));
-        System.out.println(metoda(new int[][]{{1, 2, 3}, {1, 2, 3}}));
+        int[][] array1 = {{1, 1, 3}, {1, 1, 3}, {1, 1, 3}};
+        int[][] array2 = {{2, 2, 2}, {2, 2, 2}};
+        int[][] array3 = {{1, 2, 3}, {1, 2, 3}};
+
+        int[] result1 = metoda(array1);
+        int[] result2 = metoda(array2);
+        int[] result3 = metoda(array3);
+
+        System.out.println("Result 1:");
+        printArray(result1);
+
+        System.out.println("Result 2:");
+        printArray(result2);
+
+        System.out.println("Result 3:");
+        printArray(result3);
+    }
+
+    private static void printArray(int[] result) {
+        for (int i = 0; i < result.length; i++) {
+            System.out.println(i+"-"+result[i]);
+        }
     }
 
     public static int[] metoda(int[][] slowo) {
