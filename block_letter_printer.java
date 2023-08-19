@@ -1,12 +1,18 @@
 public class block_letter_printer {
   public static String blockPrint(String input) {
+    System.out.print(input);
     input = input.toUpperCase().trim();
         StringBuilder result = new StringBuilder();
+        
         for (int row = 0; row < 7; row++) {
             for (int col = 0; col < input.length(); col++) {
                 char c = input.charAt(col);
-                String[] letterRepresentation = getLetterRepresentation(c);
-                result.append(letterRepresentation[row]).append(" ");
+                if (Character.isLetter(c)) {
+                    String[] letterRepresentation = getLetterRepresentation(c);
+                    result.append(letterRepresentation[row]).append(" ");
+                } else {
+                    result.append("      ");
+                }
             }
             result.append("\n");
         }
