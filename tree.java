@@ -1,5 +1,4 @@
 public class tree {
-
     public static void main(String[] args) {
             Drzewo drzewo = new Drzewo(true, 115, "spory");
             System.out.println(drzewo.toString());
@@ -13,7 +12,6 @@ public class tree {
 
             DrzewoOwocowe owoc = new DrzewoOwocowe(true, 12, "sredni", "ananas");
             System.out.println(owoc.toString());
-        
     }
 }
 
