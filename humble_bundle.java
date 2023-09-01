@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Main {
+class humble_bundle {
     static class ThreeDayTrip {
         String[][] events = new String[3][3];
 
@@ -41,23 +41,9 @@ class Main {
         execute();
         System.out.println(03);
     }
-    
-    public static int operation (int a, int b) {
-        int tmp = 0;
-        int wartosc = 0;
-        
-        while (a >= tmp) {
-            tmp = b;
-            
-            while(a >= tmp << 1) {
-                
-            }
-        }
-    }
 }
 
 class A {
-    String a = "";
     public A() {
         System.out.print("A");
     }
