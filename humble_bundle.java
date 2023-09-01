@@ -3,13 +3,13 @@ import java.util.*;
 class humble_bundle {
     static class ThreeDayTrip {
         String[][] events = new String[3][3];
-
         void addEvent(int day, String event) throws MyEr {
             if (day > 3) {
                 throw new MyEr("nie ma takiego dnia!");
             }
             events[--day][--day] = event;
         }
+        
         String[] getEvent(int day) throws MyEr {
             if (day > 3) {
                 throw new MyEr("nie ma takiego dnia, zakres do 3!");
@@ -32,14 +32,11 @@ class humble_bundle {
         for (int i = 0 ; i < myTrip.length; i++) {
             System.out.println(myTrip[i]);
         }
-
     }
 
     public static void main(String args[]) throws MyEr {
         C c = new C();
-        System.out.println();
         execute();
-        System.out.println(03);
     }
 }
 
