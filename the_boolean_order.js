@@ -1,4 +1,4 @@
-function solve(s, ops) {
+function the_boolean_order(s, ops) {
   return getResultsForExpression(Array.from(s, getResultsForValue), Array.from(ops))[1];
 }
 
