@@ -1,4 +1,4 @@
-function Warrior() {
+function the_greatest_warrior() {
   var experience = 100;
   var achievements = [];
   var ranks = ["Pushover", "Novice", "Fighter", "Warrior", "Veteran", "Sage", "Elite", "Conqueror", "Champion", "Master", "Greatest"];
